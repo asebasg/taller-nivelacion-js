@@ -9,17 +9,16 @@ let estaInhabilitadoStr = prompt("¿Está inhabilitado para conducir? (si/no):")
 let estaInhabilitado = estaInhabilitadoStr.toLowerCase() === "si";
 
 function puedeConducir(edad, tieneCarnet, estaInhabilitado) {
-  if (edad >= 18 && tieneCarnet === "si" && estaInhabilitado === "si") {
+  if (edad >= 18 && tieneCarnet && !estaInhabilitado) {
     return true;
   }
+  return false;
 }
 
-puedeConducir(edad, tieneCarnet, estaInhabilitado);
+const resultado = puedeConducir(edad, tieneCarnet, estaInhabilitado);
 
-/*
-if (puedeConducir == true) {
+if (resultado) {
     console.log("Puede conducir");
 } else {
-    console.log("Paila");
+    console.log("No puedes conducir");
 }
-*/
