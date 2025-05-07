@@ -19,10 +19,10 @@ persona.edad = 15;
 persona.ciudad = "Cali";
 
 console.log(
-    "Segunda persona identificada: ",
-    persona.nombre,
-    "Edad: ",
-    persona.edad,
-    "Ciudad: ",
-    persona.ciudad
-    );
+  "Segunda persona identificada: ",
+  persona.nombre,
+  "Edad: ",
+  persona.edad,
+  "Ciudad: ",
+  persona.ciudad
+);
