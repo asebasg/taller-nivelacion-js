@@ -7,10 +7,8 @@ if (edad >= 18) {
 }
 */
 
-if (edad >= 18) {
-    console.log("Puede votar");
-} else {
-    console.log("No puede votar");
-}
+let edadStr = prompt("Ingrese su edad a continuacion:");
+let edad = parseInt(edadStr);
 
-// TERMINAR CODIGO
+let mensaje = edad >= 18 ? "Usted puede votar" : "Usted no puede votar";
+console.log(mensaje);
