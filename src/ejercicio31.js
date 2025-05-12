@@ -17,10 +17,10 @@ function calcularArea(base, altura) {
 
 const arrowFSuma = (a, b) => a + b;
 
-const arrowFSaludar = (nombre) => "Hola" + nombre;
+const arrowFSaludar = (nombre) => "Hola, " + nombre;
 
 const arrowFArea = (base, altura) => base * altura;
 
 console.log(arrowFSuma(1, 2)); // Se llama la funcion y se le asignan valores a las variables
 console.log(arrowFSaludar("Sebastian"));
-console.log(arrowFSaludar(2, 5));
+console.log(arrowFArea(2, 5));
